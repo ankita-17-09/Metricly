@@ -26,6 +26,9 @@ st.set_page_config(page_title="Metricly", layout="wide", page_icon="📊")
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
+    # Add logo
+    st.image("logo.png", width=160)
+    
     st.markdown("<div class='nav-label'>MENU</div>", unsafe_allow_html=True)
     page = st.radio("", ["Dashboard", "Campaigns", "Calendar"], label_visibility="collapsed")
 
