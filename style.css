@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap');
+
+/* ── Base ── Dark Theme */
+html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0a0a;
+    color: #e0d4ff;
+}
+
+.main .block-container {
+    padding: 2rem 2.5rem;
+    background: #0d0d12;
+}
+
+/* ── Sidebar ── Dark Theme */
+[data-testid="stSidebar"] {
+    background: #0f0f1a;
+    border-right: 1px solid #2a1a3a;
+    padding: 1.5rem 1rem;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-testid="stSidebar"] .block-container {
+    background: #0f0f1a;
+    padding: 1rem;
+}
+
+.nav-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #db97ff;
+    letter-spacing: 0.12em;
+    margin: 1.5rem 0 0.5rem 0.5rem;
+}
+
+.sidebar-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0.8rem;
+    background: #1a1a2a;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #db97ff;
+    border: 1px solid #2a1a3a;
+}
+
+.stat-val {
+    font-weight: 700;
+    color: #e0d4ff;
+}
+
+/* ── Radio nav ── */
+[data-testid="stRadio"] > div {
+    gap: 0.3rem;
+}
+
+[data-testid="stRadio"] > div > label {
+    background: transparent !important;
+    border-radius: 10px !important;
+    padding: 0.6rem 0.8rem !important;
+    font-weight: 600 !important;
+    color: #db97ff !important;
+    transition: all 0.2s !important;
+    cursor: pointer !important;
+    display: block !important;
+    width: 100% !important;
+    font-size: 0.95rem !important;
+}
+
+[data-testid="stRadio"] > div > label:hover {
+    background: #2a1a3a !important;
+    color: #e0d4ff !important;
+}
+
+[data-testid="stRadio"] > div > label > div {
+    color: #db97ff !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stRadio"] > div > label[data-baseweb="radio"] p {
+    color: #db97ff !important;
+}
+
+/* ── Page Header  */
+.page-header {
+    margin-bottom: 1.8rem;
+}
+
+.page-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #e0d4ff, #db97ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 0.3rem 0;
+    letter-spacing: -0.02em;
+}
+
+.hub-title {
+    color: #db97ff;
+    font-size: 2.4rem !important;
+    font-weight: 600;
+    margin: 0.1rem 0;
+}
+
+.slogan {
+    color: #7a5a9a;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin: 0.4rem 0 0 0;
+}
+
+.subtitle {
+    color: #9b7daa;
+    font-size: 0.95rem;
+    margin: 0.2rem 0 0 0;
+}
+
+/* ── Section Titles ── */
+.section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #db97ff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #db97ff;
+    margin-bottom: 0;
+    padding: 0.8rem 1rem;
+    background: #1a1a2a;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 2px solid #2a1a3a;
+    letter-spacing: 0.01em;
+}
+
+/* ── Metric Cards ── */
+.metric-card {
+    background: #1a1a2a;
+    border-radius: 16px;
+    padding: 1.4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #2a1a3a;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(219, 151, 255, 0.15);
+}
+
+.metric-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #9b7daa;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+.metric-value {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.metric-sub {
+    font-size: 0.78rem;
+    color: #7a5a9a;
+}
+
+/* ── Upload Zone ── */
+.upload-zone {
+    text-align: center;
+    padding: 3.5rem 2rem;
+    background: #1a1a2a;
+    border-radius: 20px;
+    border: 2px dashed #2a1a3a;
+    margin: 1.5rem 0;
+}
+
+.upload-icon {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #db97ff;
+    margin-bottom: 1rem;
+}
+
+.upload-zone h3 {
+    color: #db97ff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.upload-zone p {
+    color: #9b7daa;
+    font-size: 0.9rem;
+}
+
+/* ── File Uploader ── */
+[data-testid="stFileUploader"] {
+    background: #1a1a2a !important;
+    border-radius: 16px !important;
+    border: 1.5px solid #2a1a3a !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 1rem;
+    padding: 0.5rem !important;
+}
+
+[data-testid="stFileUploader"] > div {
+    background: #1a1a2a !important;
+    border: none !important;
+    border-radius: 12px !important;
+}
+
+[data-testid="stFileUploader"] section {
+    background: #1a1a2a !important;
+    border: none !important;
+    border-radius: 12px !important;
+    color: #e0d4ff !important;
+}
+
+[data-testid="stFileUploader"] section > div {
+    background: #1a1a2a !important;
+    color: #e0d4ff !important;
+}
+
+[data-testid="stFileUploader"] button {
+    background: #2a1a3a !important;
+    color: #db97ff !important;
+    border: 1.5px solid #db97ff !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] p {
+    color: #9b7daa !important;
+}
+
+/* ── Buttons ── */
+.stButton>button {
+    background: linear-gradient(135deg, #410061, #db97ff);
+    color: white;
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 0.7rem 2rem;
+    border: none;
+    width: 100%;
+    font-size: 0.95rem;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(219, 151, 255, 0.25);
+    letter-spacing: 0.02em;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(219, 151, 255, 0.4);
+    background: linear-gradient(135deg, #5a0085, #e0a8ff);
+}
+
+/* ── Download Button ── */
+[data-testid="stDownloadButton"] button {
+    background: #1a1a2a !important;
+    color: #db97ff !important;
+    border: 2px solid #db97ff !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stDownloadButton"] button:hover {
+    background: #2a1a3a !important;
+    border-color: #e0d4ff !important;
+    transform: translateY(-2px);
+}
+
+/* ── Text Input ── */
+.stTextInput>div>div>input {
+    background: #1a1a2a;
+    color: #e0d4ff;
+    border-radius: 12px;
+    border: 1.5px solid #2a1a3a;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+    font-family: 'DM Sans', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.stTextInput>div>div>input:focus {
+    border-color: #db97ff;
+    box-shadow: 0 0 0 3px rgba(219, 151, 255, 0.1);
+}
+
+.stTextInput>div>div>input::placeholder {
+    color: #4a3a5a;
+}
+
+/* ── Selectbox ── */
+[data-testid="stSelectbox"] > div > div {
+    background: #1a1a2a;
+    border: 1.5px solid #2a1a3a;
+    border-radius: 12px;
+    color: #e0d4ff;
+}
+
+/* ── Number Input ── */
+[data-testid="stNumberInput"] input {
+    background: #1a1a2a;
+    border: 1.5px solid #2a1a3a;
+    border-radius: 12px;
+    color: #e0d4ff;
+}
+
+/* ── Dataframe ── */
+[data-testid="stDataFrame"] {
+    background: #1a1a2a;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+[data-testid="stDataFrame"] table {
+    background: #1a1a2a;
+    color: #e0d4ff;
+}
+
+/* ── Insight Box ── */
+.insight-box {
+    background: #1a1a2a;
+    border-left: 5px solid #db97ff;
+    border-radius: 16px;
+    padding: 1.8rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.85;
+    color: #e0d4ff;
+    border: 1px solid #2a1a3a;
+}
+
+.insight-box h3 {
+    color: #db97ff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* ── Calendar ── */
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    background: #1a1a2a;
+    border-radius: 0 0 16px 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    border: 1px solid #2a1a3a;
+}
+
+.cal-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #db97ff;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.5rem 0;
+}
+
+.cal-cell {
+    min-height: 75px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background: #0f0f1a;
+    transition: background 0.2s;
+}
+
+.cal-cell:hover {
+    background: #2a1a3a;
+}
+
+.cal-cell.empty {
+    background: transparent;
+}
+
+.cal-today {
+    background: linear-gradient(135deg, #2a1a3a, #410061) !important;
+    border: 1px solid #db97ff;
+}
+
+.cal-today .cal-day {
+    color: #db97ff !important;
+}
+
+.cal-day {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #e0d4ff;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.cal-event {
+    font-size: 0.62rem;
+    background: #2a1a3a;
+    color: #db97ff;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+/* ── Spinner ── */
+.stSpinner > div {
+    border-top-color: #db97ff !important;
+}
+
+/* ── Success message ── */
+.stSuccess {
+    background: #1a1a2a;
+    border: 1px solid #db97ff;
+    border-radius: 10px;
+    color: #db97ff;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0f0f1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #2a1a3a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #db97ff;
+}
+
+/* ── Additional fixes for dark theme ── */
+[data-testid="stMarkdown"] {
+    color: #e0d4ff;
+}
+
+div[data-testid="stDateInput"] input {
+    background: #1a1a2a;
+    color: #e0d4ff;
+    border: 1.5px solid #2a1a3a;
+}
+
+[data-testid="stDateInput"] button {
+    background: #1a1a2a !important;
+    color: #db97ff !important;
+}
+
+[data-testid="stDateInput"] div {
+    background: #1a1a2a !important;
+}
+
+hr {
+    border-color: #2a1a3a !important;
+}
